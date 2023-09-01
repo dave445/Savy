@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-    marginBottom: 100,
+    marginBottom: 75,
   },
   image: {
     resizeMode: 'stretch',
@@ -39,18 +39,25 @@ const styles = StyleSheet.create({
   },
   button: {
     backgroundColor: '#DDDDDD',
-    padding: 20,
+    padding: 15,
     borderRadius: 100,
-    marginTop: 20
+    marginTop: 20,
+    width: 220,
+    justifyContent: 'center',
+    backgroundColor: 'blue',
+    
   },
   buttontxt: {
     fontSize: 20,
+    color: 'white',
+    textAlign: 'center',
+    letterSpacing: 2,
   },
   details: {
     textAlign: 'center',
     padding: 10,
     letterSpacing: 1,
-    fontFamily: 'areal',
+    fontFamily: 'Roboto',
     fontSize: 10
   }
 });
