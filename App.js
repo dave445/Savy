@@ -1,19 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import SvgComponent from './assets/onboard';
+import Index from './screens';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <SvgComponent style={styles.image} />
-      <Text style={styles.text}>Take Control</Text>
-      <Text style={styles.text}>of Your Finance!</Text>
-      <Text style={styles.details}>Effortlessly budget, save, and spend wisely with our all-in-one app</Text>
-      <StatusBar style="auto" />
-      <TouchableOpacity style={styles.button}>
-        <Text style={styles.buttontxt}>Get Started</Text>
-      </TouchableOpacity>
-    </View>
+    <Index />
   );
 }
 
@@ -23,7 +15,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-    marginBottom: 75,
+    marginBottom: 0,
   },
   image: {
     resizeMode: 'stretch',
@@ -31,23 +23,23 @@ const styles = StyleSheet.create({
     height: 290,
   },
   text: {
-    fontSize: 33,
+    fontSize: 35,
     textAlign: 'justify',
     fontWeight: 'bold',
     letterSpacing: .3,
     textTransform: 'uppercase',
   },
   button: {
-    backgroundColor: '#DDDDDD',
+    backgroundColor: '#0066ff',
     padding: 15,
     borderRadius: 100,
     marginTop: 20,
     width: 220,
     justifyContent: 'center',
-    backgroundColor: 'blue',
+    // backgroundColor: 'blue',
     
   },
-  buttontxt: {
+  buttonText: {
     fontSize: 20,
     color: 'white',
     textAlign: 'center',
@@ -58,6 +50,13 @@ const styles = StyleSheet.create({
     padding: 10,
     letterSpacing: 1,
     fontFamily: 'Roboto',
-    fontSize: 10
+    fontSize: 15,
+    color: '#808c8b'
+  },
+  orange: {
+    color: '#ed862d'
+  },
+  blue: {
+    color: '#3daec4'
   }
 });
